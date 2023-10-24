@@ -3,22 +3,24 @@
 
 
 class Square:
-    """comment on square 
+    """comment on square
     Attributes:
         __size (int): size of a side of the square
     """
+
     def __init__(self, size=0):
         """initializes the square
         Args:
             size (int): size of a side of the square
-        Returns: None
+        Returns:
+            Nothing
         """
         self.size = size
 
     def area(self):
         """calculates the square's area
         Returns:
-            The area of the square
+            return the area of the square
         """
         return (self.__size) ** 2
 
