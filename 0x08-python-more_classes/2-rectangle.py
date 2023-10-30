@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""This function define a rectangle by private instance attribute"""
+"""This function define a rectangle by private instance attribute."""
 
 
 class Rectangle:
     """The __init__ method initialize the values passed to the object
     Attributes:
-        width: its a private width rectangle attribute.
-        height: its a private height rectangle attribute.
+        width: A private width rectangle attribute
+        height: A private height rectangle attribute
     """
 
     def __init__(self, width=0, height=0):
@@ -28,7 +28,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """The height property"""
+        """The height properties"""
         return self.__height
 
     @height.setter
@@ -38,7 +38,8 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-     def area(self):
+
+    def area(self):
         return self.__width * self.__height
 
     def perimeter(self):
